@@ -1,0 +1,25 @@
+<div id="myModal" class="modal" style="display: block;">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span (click)="modelClosefunc()" class="close">&times;</span>
+       <h2>User Information</h2>
+       <p>User has benn created successfully with the below details</p>
+       <div class="list">
+        <div class="listLeft">User Name:</div>
+        <div class="listRight">{{fromValue.name}} {{fromValue.lastName}}</div>
+       </div>
+    <div class="list">
+        <div class="listLeft">Phone:</div>
+        <div class="listRight">{{fromValue.phone}} {{fromValue.ext}}</div>
+    </div>
+    <div class="list">
+        <div class="listLeft">Email:</div>
+        <div class="listRight">{{fromValue.email}}</div>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary" (click)="navigateToThanku()">Ok</button>
+    </div>
+
+    </div>
+    
+</div>
